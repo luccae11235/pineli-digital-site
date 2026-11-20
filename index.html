@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A Pineli Digital ajuda pequenos negócios a automatizar o atendimento pelo WhatsApp, das perguntas frequentes à triagem de pedidos.">
+  <meta name="theme-color" content="#071c2e">
+  <link rel="canonical" href="https://pinelidigital.com.br/">
+  <title>Pineli Digital | Automação de atendimento pelo WhatsApp</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --navy: #071c2e;
+      --mint: #04ecd5;
+      --paper: #f3f8f7;
+      --muted: #415766;
+      font-family: "Avenir Next", Avenir, system-ui, sans-serif;
+      color: var(--navy);
+      background: var(--paper);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body, h1, h2, h3, p { margin: 0; }
+    a { color: inherit; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+
+    .wrap {
+      width: min(70rem, calc(100% - clamp(2.5rem, 9vw, 7rem)));
+      margin-inline: auto;
+    }
+
+    .masthead, .hero { color: #f5fafa; background: var(--navy); }
+    .masthead .wrap {
+      min-height: 4.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.25rem;
+      border-bottom: 1px solid #284050;
+    }
+
+    .wordmark { font-weight: 750; letter-spacing: -.03em; }
+    .masthead a { text-underline-offset: .27em; font-size: .9375rem; }
+    .masthead a:hover { color: var(--mint); }
+
+    .hero .wrap {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      align-items: center;
+      gap: clamp(2rem, 6vw, 5.5rem);
+      padding-block: clamp(3rem, 7.5vw, 6.5rem);
+    }
+
+    h1 {
+      max-width: 12ch;
+      font-size: clamp(2.65rem, 6.3vw, 5.3rem);
+      font-weight: 720;
+      letter-spacing: -.06em;
+      line-height: 1.02;
+    }
+
+    .accent { color: var(--mint); }
+    .intro {
+      max-width: 39ch;
+      margin-top: 1.35rem;
+      color: #c9d8df;
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      line-height: 1.65;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 3.25rem;
+      margin-top: 1.75rem;
+      padding: .65rem 1.3rem;
+      border-radius: .45rem;
+      background: var(--mint);
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 750;
+    }
+
+    .button:hover { background: #81fff0; }
+    .button:focus-visible { outline-color: #f5fafa; }
+
+    .brand-art {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 27rem;
+      margin-inline: auto;
+      border: 1px solid #2c495a;
+      border-radius: 1rem;
+    }
+
+    .services { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+    h2 {
+      font-size: clamp(1.7rem, 3.5vw, 2.65rem);
+      letter-spacing: -.045em;
+      line-height: 1.15;
+    }
+
+    .services ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+      margin: 1.5rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .services li {
+      padding-top: 1.1rem;
+      border-top: 1px solid #bed4d0;
+    }
+
+    h3 { font-size: 1.08rem; line-height: 1.35; }
+    .services p { margin-top: .35rem; color: var(--muted); line-height: 1.55; }
+
+    footer .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: .75rem 1.5rem;
+      padding-block: 1.4rem;
+      border-top: 1px solid #bed4d0;
+      font-size: .9375rem;
+    }
+
+    footer a { color: var(--muted); text-underline-offset: .23em; overflow-wrap: anywhere; }
+    footer a:hover { color: var(--navy); }
+
+    @media (max-width: 44rem) {
+      .hero .wrap, .services ul { grid-template-columns: 1fr; }
+      .hero .wrap { gap: 2.25rem; }
+      .brand-art { max-width: 22rem; margin-inline: 0; }
+      .services ul { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap">
+      <p class="wordmark">Pineli Digital</p>
+      <a href="#contato">Contato</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="titulo">
+      <div class="wrap">
+        <div>
+          <h1 id="titulo">Automatize seu atendimento pelo <span class="accent">WhatsApp</span></h1>
+          <p class="intro">A Pineli Digital ajuda pequenos negócios a responder dúvidas e organizar pedidos com automações que se encaixam na rotina da equipe.</p>
+          <a class="button" href="mailto:pinelidigital@outlook.com">Conversar por e-mail</a>
+        </div>
+        <img class="brand-art" src="./pineli-digital.webp" alt="Logo da Pineli Digital" width="960" height="960" fetchpriority="high">
+      </div>
+    </section>
+
+    <section class="services wrap" aria-labelledby="rotina">
+      <h2 id="rotina">O que dá para automatizar</h2>
+      <ul>
+        <li>
+          <h3>Perguntas frequentes</h3>
+          <p>Responda dúvidas sobre horários, serviços e localização.</p>
+        </li>
+        <li>
+          <h3>Pedidos de orçamento</h3>
+          <p>Reúna as informações que a equipe precisa para preparar uma proposta.</p>
+        </li>
+        <li>
+          <h3>Encaminhamento à equipe</h3>
+          <p>Passe a conversa adiante quando o cliente precisar de atendimento humano.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <div class="wrap">
+      <p class="wordmark">Pineli Digital</p>
+      <a href="mailto:pinelidigital@outlook.com">pinelidigital@outlook.com</a>
+    </div>
+  </footer>
+</body>
+</html>
